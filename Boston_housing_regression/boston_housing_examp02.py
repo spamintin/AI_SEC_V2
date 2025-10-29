@@ -35,8 +35,8 @@ print(y_test.shape)
 
 #data_label
 for ix,d in enumerate(x_train[0]):
-  print(ix+1,"타입:",type(d))
-print("정답데이터타입:",type(y_train[0]))
+  print(ix+1,"type:",type(d))
+print("target_data_type:",type(y_train[0]))
 data_label= ["CRIM","ZN","INDUS","CHAS","NOX","RM","AGE","DIS","RAD","TAX","PTRATIO","B","LSTAT"]
 for ix,d in enumerate(x_train[0]):
   print(f"{ix}. {data_label[ix]}: {d}", end="|")
@@ -49,7 +49,7 @@ for ix in range(len(x_train[0])):
   plt.title(data_label[ix])
 plt.show()
 
-# 데이터 크기
+# Dataset size
 for ix in range(len(x_train[0])):
   print(ix,".")
   print("max",x_train[:,ix].max(),end=":")
@@ -58,7 +58,7 @@ for ix in range(len(x_train[0])):
   print("mean",x_train[:,ix].mean(),end=":")
   print()
 
-#데이터 전처리 과정- 3번 (CHAS). 4번 (NOX) 필드를 제외한 데이터 정규화 스케일링
+# Data preprocessing - Normalize and scale the data excluding columns 3 (CHAS) and 4 (NOX)
 except_datas=[3,4]
 norm_mean=[]
 norm_std=[]
@@ -73,7 +73,7 @@ def normal_data(target_data):
   for ix in range(len(target_data[0])):
     if ix in except_datas:
       continue
-      #데이터를 표준 정규분포로 스케일링
+      #Scale the data to a standard normal distribution.
     target_data[:,ix]=(target_data[:,ix]-norm_mean[ix])/norm_std[ix]
   return target_data
 
@@ -88,7 +88,7 @@ print(x_train[:,-1].mean())
 print(x_train[:].max())
 print(x_test[:].max())
 
-#4. 모델 생성
+#4. Model Creation
 from tensorflow.keras import Input, Sequential
 from tensorflow.keras.layers import Dense, Dropout
 print(x_train.shape)
@@ -116,7 +116,7 @@ print(x_test[:].max())
 print(x_train[:].min())
 print(x_test[:].min())
 
-#훈련시작
+#Begin Training
 y_mean=y_train.mean()
 y_std=y_train.std()
 y_train=(y_train-y_mean)/y_std
@@ -136,7 +136,7 @@ plt.show()
 print(y_test[0])
 print(y_pred[0])
 
-#오차율 계산
+#Error Rate Calculation
 print(y_pred.shape)
 print(y_test.shape)
 y_pred=y_pred.reshape(-1)
@@ -154,5 +154,5 @@ rate=1-y_pred/y_test
 print(rate[:5])
 rate= np.absolute(rate)
 err_rate_mean= rate[:5].mean()
-print(f"현재 모델의 전체 오차평균 백분율은 {err_rate_mean:.2%}")
+print(f"The current model’s overall mean error percentage is {err_rate_mean:.2%}")
 

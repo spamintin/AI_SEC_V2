@@ -8,7 +8,7 @@
 </pre>
 #### Tool  
 <pre>
- Google Collab Editor, Keras Tensorflow, Numpy, Matplotlib  
+ Google Colab Editor, Keras Tensorflow, Numpy, Matplotlib  
 </pre>
 #### The order of training  
 <pre>

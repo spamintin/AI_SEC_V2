@@ -1,7 +1,7 @@
 # AI_SEC_V2
 ## AI solution hostile AI Information Security Specialist 
 ### 1.Project: Linear Regression (Boston Housing Regression)  
-#### Data - Bostion Housing Median Value  
+#### Data - Boston Housing Median Value  
 #### data_label 
 <pre>
  "CRIM","ZN","INDUS","CHAS","NOX","RM","AGE","DIS","RAD","TAX","PTRATIO","B","LSTAT"  

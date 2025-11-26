@@ -37,30 +37,30 @@
 ##### Root filename: Web_Service_AI.py (Web routing)
 
 #### Directory Structure
-  ######ai_service
-    ######coin_config : Saved model, error rate, and scaler
-    ######Crypro_Coin_Predict.py (Services related to model prediction)
-    ###### Crypro_Coin_Service.py (Services integrated with the middleware server)
-    ######Crypro_Coin_Train.py (Data preprocessing, model creation, training, and saving)   
-  #####Static
-    ######chart (Saving training result graphs)
-    ######css (Client service screen layout)
-    ######js (Client service screen controller)
-    ###### img (Client service required images)
-  #####templates
-    ######html (Client service screen structure)
+###### ai_service
+###### coin_config : Saved model, error rate, and scaler
+###### Crypro_Coin_Predict.py (Services related to model prediction)
+###### Crypro_Coin_Service.py (Services integrated with the middleware server)
+###### Crypro_Coin_Train.py (Data preprocessing, model creation, training, and saving)   
+##### Static
+###### chart (Saving training result graphs)
+###### css (Client service screen layout)
+###### js (Client service screen controller)
+###### img (Client service required images)
+##### templates
+###### html (Client service screen structure)
 </pre>
 <pre>
 #### Work Process
-  ######1.Data collection
-  ######2.Data analysis
-  ######3.Data preprocessing
-  ######4.Sequential model construction
-  ######5.Visualization of training results
-  ######6.Accuracy visualization
-  ######7.Quantification of accuracy
-  ######8.Writing prediction functions
-  ######9.Web service integration module
-  ######10.Web server
-  ######11.Client implementation
+###### 1.Data collection
+###### 2.Data analysis
+###### 3.Data preprocessing
+###### 4.Sequential model construction
+###### 5.Visualization of training results
+###### 6.Accuracy visualization
+###### 7.Quantification of accuracy
+###### 8.Writing prediction functions
+###### 9.Web service integration module
+###### 10.Web server
+###### 11.Client implementation
 </pre>

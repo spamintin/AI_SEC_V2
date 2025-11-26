@@ -26,15 +26,15 @@
 </pre>
 #### Tool  
 <pre>
-###### Programming language: python3.9
-###### Development tools: jupyter notebook, pycharm GUI
-###### Main libraries: tensorflow v2.10.1, flask, matplotlib v3.9.4, numpy v2.26.4, , scikit-learn v1.6.1, keras v2.10.0 
+##### Programming language: python3.9
+##### Development tools: jupyter notebook, pycharm GUI
+##### Main libraries: tensorflow v2.10.1, flask, matplotlib v3.9.4, numpy v2.26.4, , scikit-learn v1.6.1, keras v2.10.0 
 </pre>
 #### Package structure
 <pre>
-##### Project name: Crypto_Coin_Service_03
-##### Root dierectory: ai_service, static, templates
-##### Root filename: Web_Service_AI.py (Web routing)
+###### Project name: Crypto_Coin_Service_03
+###### Root dierectory: ai_service, static, templates
+###### Root filename: Web_Service_AI.py (Web routing)
 </pre>
 #### Directory Structure
 <pre>
@@ -45,13 +45,13 @@
 ###### Crypro_Coin_Train.py (Data preprocessing, model creation, training, and saving)   
 </pre>
 
-##### Static
+#### Static
 <pre>
 ###### chart (Saving training result graphs)
 ###### css (Client service screen layout)
 ###### js (Client service screen controller)
 ###### img (Client service required images)
-##### templates
+###### templates
 ###### html (Client service screen structure)
 </pre>
 

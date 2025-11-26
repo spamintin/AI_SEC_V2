@@ -1,0 +1,33 @@
+#mycontent * {
+  font-size: 1.2rem;
+}
+legend {
+  display: block;
+  text-align: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: aliceblue;
+}
+select {
+  width: 16rem;
+}
+#mycontent .con {
+  padding-left: calc(50vw - 32rem);
+  margin-bottom: 1rem;
+}
+label {
+  display: inline-block;
+  width: 8rem;
+  color: aliceblue;
+}
+
+#res_contain {
+  top: 9rem;
+
+  #closeBtn {
+    cursor: default;
+  }
+  #closeBtn:hover {
+    color: aqua;
+  }
+}

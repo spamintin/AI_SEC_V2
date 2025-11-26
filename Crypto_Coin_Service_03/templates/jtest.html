@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>JSON data 'give and take' test page</h3>
+    <button id="jbtn">json data sending</button>
+    <div id="server_content"></div>
+    <script>
+      const server_content = document.getElementById("server_content");
+      const jbtn = document.getElementById("jbtn");
+      jdata = { myname: "Lukas", age: 35 };
+      jbtn.addEventListener("click", async () => {
+        let pendding = await fetch("/jtest/jdata", {
+          headers: { "Content-Type": "application/json" },
+          method: "post",
+          body: JSON.stringify(jdata),
+        });
+
+        let result = await pendding.json();
+        server_content.innerText = `DATA GIVE AND TAKE:${result.myname} and ${result["age"]}`;
+        console.log(result);
+      });
+    </script>
+  </body>
+</html>

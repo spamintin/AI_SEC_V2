@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/intro_index.css " />
+    <link rel="stylesheet" href="../static/css/regression_coin.css " />
+    <script src="/static/js/regression_coin.js"></script>
+  </head>
+  <body onload ="get_coinname()">
+    <h1>❄Adversarial Attack Threat Analysis for AI Solutions❄</h1>
+    <div id="main_intro">
+      <h2
+        style="
+          margin-bottom: 3rem;
+          text-align: center;
+          margin: 1rem 0;
+          padding: 1rem 0;
+          color: rgb(32, 59, 133);
+        "
+      >
+        Training that supports AI solution security enhanced against adversarial
+        generative attacks
+      </h2>
+      <div id="mycontent">
+      <div class="con">
+        <legend>Analysis Data Name</legend>
+        <div>
+          <label for="coinname"> COIN NAME </label>
+          <select id="coinname" name="coinname">
+            
+          </select>
+        </div>
+        <div>
+          <label for="timegap">Continuous Analysis Days</label>
+          <input style="width: 16rem;" id="timegap", type="number",name="name", value="1"/>
+          </div class="con">
+        <div class="con"><button id= "anal_btn" style="padding:0.5rem">Analysis</button></div>
+              
+      </div>
+      
+
+  
+    </div>
+    <div id="res_contain" style="width: 99vw;
+      height:calc(99vh-10rem) ;
+      background:rgba(228, 228, 230, 0.918) ;
+      display:none;position:fixed;
+      overflow-y: auto;">
+
+          <div id="closeBtn" style="font-size: 3.5rem;
+          color:rgb(203, 244, 250);background:none;
+          border:none rgb(10, 38, 133);
+          top:0.5rem; right:0.5rem;
+          position: absolute;
+          cursor: pointer">❄</div>
+
+        <div id="anal_data"></div>
+        <div id="result" style="overflow-y: auto;">
+        </div>
+        </div>
+    <img
+      id="mychar"
+      src="../static/img/snowfox_ani.png"
+      style="width: 6rem; height: 4.5rem"
+    />
+    <script>
+  const fox = document.getElementById("mychar");
+
+  function wander() {
+    const maxX = window.innerWidth - fox.clientWidth;
+    const maxY = window.innerHeight - fox.clientHeight - 80;
+
+    const newX = Math.random() * maxX;
+    const newY = Math.random() * maxY;
+
+    const oldX = parseFloat(fox.style.left) || 0;
+
+    if (newX < oldX) {
+      fox.style.transform = "scaleX(1)";
+    } else {
+      fox.style.transform = "scaleX(-1)";
+    }
+
+    fox.style.left = newX + "px";
+    fox.style.top = newY + "px";
+
+    const delay = 2000 + Math.random() * 3000;
+    setTimeout(wander, delay);
+  }
+
+  wander();
+</script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0 1rem;
+}
+h1 {
+  text-align: center;
+  height: 5rem;
+  line-height: 5rem;
+  background: rgb(62, 62, 100);
+  color: rgb(217, 231, 243);
+  margin-bottom: 0.5rem;
+}
+#main_intro {
+  background-image: url("../img/snowy-winter-landscape.jpg");
+  object-fit: cover;
+  height: calc(100vh - 6rem);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.content a {
+  padding-left: calc(50vw - 25rem);
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.content a:hover {
+  color: rgb(128, 198, 219);
+  font-weight: bold;
+}
+.content {
+  margin-bottom: 2rem;
+  color: aliceblue;
+}
+#mychar {
+  position: fixed;
+  bottom: 5rem;
+  transform: scaleX(-1);
+  transition: left 6s linear, top 6s linear, transform 0.3s ease;
+}
+@keyframes move {
+  0% {
+    left: 1rem;
+    transform: scaleX(-1);
+  }
+
+  45% {
+    left: calc(100% - 5rem);
+    transform: scaleX(-1);
+  }
+  55% {
+    left: calc(100% - 5rem);
+    transform: scaleX(-1);
+  }
+  100% {
+    left: calc(100% - 6rem);
+    transform: scaleX(-1);
+  }
+}

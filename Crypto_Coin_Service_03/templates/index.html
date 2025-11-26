@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    This is a template document
+    <br />
+    <form method="post" action="/myinfo">
+      <legend>personal information</legend>
+      <label>name<input type="text" name="myname" /></label>
+      <label>age<input type="number" value="35" name="age" /></label>
+      <input type="submit" value="sending server" />
+    </form>
+    <br />
+    <img
+      src="{{url_for('static',filename='img/snow_fox.jpg')}}"
+      style="width: 15rem; height: 10rem"
+    />
+    <img id="fimg" , style="width: 15rem; height: 10rem" />
+    <script>
+      container = document.getElementById("fimg");
+      async function getimg() {
+        res = await fetch("/getimg/snow_fox.jpg");
+        imgtxt = await res.text();
+        console.log(res.text);
+        container.src = imgtxt;
+      }
+      getimg();
+    </script>
+  </body>
+</html>

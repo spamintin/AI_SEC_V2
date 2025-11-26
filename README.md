@@ -20,52 +20,52 @@
 #### Data - Extracting around 200 cryptocurrency data points at the current time and converting them into time series data  
 #### Data Definition
 <pre>
-###### Highest price per time step
-###### Lowest price per time step
-###### Current price per time step
+ Highest price per time step
+ Lowest price per time step
+ Current price per time step
 </pre>
 #### Tool  
 <pre>
-##### Programming language: python3.9
-##### Development tools: jupyter notebook, pycharm GUI
-##### Main libraries: tensorflow v2.10.1, flask, matplotlib v3.9.4, numpy v2.26.4, , scikit-learn v1.6.1, keras v2.10.0 
+ Programming language: python3.9
+ Development tools: jupyter notebook, pycharm GUI
+ Main libraries: tensorflow v2.10.1, flask, matplotlib v3.9.4, numpy v2.26.4, , scikit-learn v1.6.1, keras v2.10.0 
 </pre>
 #### Package structure
 <pre>
-###### Project name: Crypto_Coin_Service_03
-###### Root dierectory: ai_service, static, templates
-###### Root filename: Web_Service_AI.py (Web routing)
+ Project name: Crypto_Coin_Service_03
+ Root dierectory: ai_service, static, templates
+ Root filename: Web_Service_AI.py (Web routing)
 </pre>
 #### Directory Structure
 <pre>
-###### ai_service
-###### coin_config : Saved model, error rate, and scaler
-###### Crypro_Coin_Predict.py (Services related to model prediction)
-###### Crypro_Coin_Service.py (Services integrated with the middleware server)
-###### Crypro_Coin_Train.py (Data preprocessing, model creation, training, and saving)   
+ ai_service
+ coin_config : Saved model, error rate, and scaler
+ Crypro_Coin_Predict.py (Services related to model prediction)
+ Crypro_Coin_Service.py (Services integrated with the middleware server)
+ Crypro_Coin_Train.py (Data preprocessing, model creation, training, and saving)   
 </pre>
 
 #### Static
 <pre>
-###### chart (Saving training result graphs)
-###### css (Client service screen layout)
-###### js (Client service screen controller)
-###### img (Client service required images)
-###### templates
-###### html (Client service screen structure)
+ chart (Saving training result graphs)
+ css (Client service screen layout)
+ js (Client service screen controller)
+ img (Client service required images)
+ templates
+ html (Client service screen structure)
 </pre>
 
 #### Work Process
 <pre>
-###### 1.Data collection
-###### 2.Data analysis
-###### 3.Data preprocessing
-###### 4.Sequential model construction
-###### 5.Visualization of training results
-###### 6.Accuracy visualization
-###### 7.Quantification of accuracy
-###### 8.Writing prediction functions
-###### 9.Web service integration module
-###### 10.Web server
-###### 11.Client implementation
+ 1.Data collection
+ 2.Data analysis
+ 3.Data preprocessing
+ 4.Sequential model construction
+ 5.Visualization of training results
+ 6.Accuracy visualization
+ 7.Quantification of accuracy
+ 8.Writing prediction functions
+ 9.Web service integration module
+ 10.Web server
+ 11.Client implementation
 </pre>
